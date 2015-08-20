@@ -1,6 +1,6 @@
-BIN = .
+BIN = ../bin
 ROOT = ..
-SRC = ../src
+SRC = .
 CXX = g++
 FLAGS = -g -std=c++0x
 OBJS = main.o FrameBufferObject.o Game.o Image.o Lighting.o Polygon.o Scene.o
@@ -9,7 +9,8 @@ LIBS = -lSDL2 -lSDL_image -lGL -lGLEW
 all: main
 
 main: $(OBJS)
-	$(CXX) $(FLAGS) -o main $(OBJS) $(LIBS)
+	mkdir $(BIN)
+	$(CXX) $(FLAGS) -o $(BIN)/main $(OBJS) $(LIBS)
 
 main.o: $(ROOT)/main.cpp $(SRC)/Game.h
 	$(CXX) $(FLAGS) -c $(ROOT)/main.cpp

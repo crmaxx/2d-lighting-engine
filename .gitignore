@@ -14,9 +14,6 @@
 *.la
 *.a
 
-lightingengine/lightingengine.opensdf
-log.txt
-
 *.tlog
 *.exe
 *.ilk
@@ -28,3 +25,7 @@ log.txt
 *.lastbuildstate
 *.vcxproj
 *.vcxproj.filters
+
+lightingengine/lightingengine.opensdf
+log.txt
+bin/

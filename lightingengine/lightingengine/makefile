@@ -1,8 +1,8 @@
 BIN = ./bin
 SRC = ./src
 
-all: 
-	$(MAKE) -sC $(BIN) all && ln -sf $(BIN)/main main
+all:
+	$(MAKE) -sC $(SRC) all
 
 clean:
-	cd $(BIN) && $(MAKE) -s clean
+	rm -rf $(BIN) && cd $(SRC) && $(MAKE) -s clean
