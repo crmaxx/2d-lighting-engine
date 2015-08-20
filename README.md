@@ -6,7 +6,7 @@ A 2D Lighting Engine in C++ using SDL/OpenGL. Creates hard shadows from point li
 libSDL2, libSDL2_image, libGL, libGLEW
 
 # Building and running
-in the lightingengine/lightingengine/ directory, run `make` and then run `bin/main`
+in the base directory, run `make` and then run `bin/main`
 
 # Example
 ![Example of the lighting system](http://i.imgur.com/yt66LX3.png)
