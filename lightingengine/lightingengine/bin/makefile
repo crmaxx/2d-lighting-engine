@@ -4,7 +4,7 @@ SRC = ../src
 CXX = g++
 FLAGS = -g -std=c++0x
 OBJS = main.o FrameBufferObject.o Game.o Image.o Lighting.o Polygon.o Scene.o
-LIBS = -lSDL2 -lSDL_image -lGLEW -lGLU
+LIBS = -lSDL2 -lSDL_image -lGL -lGLEW
 
 all: main
 

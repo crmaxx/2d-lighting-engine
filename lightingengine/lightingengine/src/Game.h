@@ -19,7 +19,7 @@ http://www.gamedev.net/page/resources/_/technical/graphics-programming-and-theor
 #include <GL/glu.h>
 #define NO_SDL_GLEXT
 #include <SDL2/SDL.h>
-#include <SDL/SDL_image.h>
+#include <SDL2/SDL_image.h>
 #include <SDL2/SDL_opengl.h>
 
 #include "Scene.h"
