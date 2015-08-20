@@ -9,4 +9,4 @@ libSDL2, libSDL2_image, libGL, libGLEW
 in the lightingengine/lightingengine/ directory, run `make` and then run `bin/main`
 
 # Example
-[![Example of the lighting system](http://i.imgur.com/yt66LX3.png)]
+![Example of the lighting system](http://i.imgur.com/yt66LX3.png)
