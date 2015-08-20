@@ -3,7 +3,7 @@ ROOT = ..
 SRC = .
 CXX = g++
 FLAGS = -g -std=c++0x
-OBJS = main.o FrameBufferObject.o Game.o Image.o Lighting.o Polygon.o Scene.o
+OBJS = main.o FrameBufferObject.o Game.o Lighting.o Polygon.o Scene.o
 LIBS = -lSDL2 -lSDL_image -lGL -lGLEW
 
 all: main
@@ -20,9 +20,6 @@ FrameBufferObject.o: $(SRC)/FrameBufferObject.cpp $(SRC)/FrameBufferObject.h
 
 Game.o: $(SRC)/Game.cpp $(SRC)/Game.h $(SRC)/Scene.h
 	$(CXX) $(FLAGS) -c $(SRC)/Game.cpp
-
-Image.o: $(SRC)/Image.cpp $(SRC)/Image.h
-	$(CXX) $(FLAGS) -c $(SRC)/Image.cpp
 
 Lighting.o: $(SRC)/Lighting.cpp $(SRC)/Lighting.h $(SRC)/Vector2.h
 	$(CXX) $(FLAGS) -c $(SRC)/Lighting.cpp
